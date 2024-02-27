@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -58,7 +58,7 @@ fun NewsItem(
                     .padding(vertical = 8.dp, horizontal = 16.dp),
                 textAlign = TextAlign.Start
             )
-            Divider(modifier = Modifier.padding(bottom = 4.dp, top = 4.dp, start = 16.dp))
+            HorizontalDivider(modifier = Modifier.padding(bottom = 4.dp, top = 4.dp, start = 16.dp))
         }
     }
 

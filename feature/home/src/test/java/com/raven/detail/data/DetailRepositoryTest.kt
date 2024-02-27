@@ -8,13 +8,8 @@ import com.ninestudios.local.news.entities.NewsMediaList
 import com.ninestudios.local.news.entities.NewsMediaMetadata
 import com.ninestudios.local.news.entities.NewsMediaMetadataList
 import com.raven.home.CoroutineTestRule
-import com.raven.home.data.source.local.toNewsDataResult
-import com.raven.home.data.source.remote.service.NewsServiceResponse
-import com.raven.home.domain.models.NewsData
 import com.raven.network.NetworkStatus
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.Before

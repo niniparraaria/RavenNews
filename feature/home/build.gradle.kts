@@ -24,7 +24,6 @@ dependencies {
     compose()
     coil()
     room()
-    ui()
     navigation()
 
     implementation(project(":core"))

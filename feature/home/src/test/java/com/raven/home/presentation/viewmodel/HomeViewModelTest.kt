@@ -9,7 +9,6 @@ import com.raven.home.domain.models.NewsState
 import com.raven.network.NetworkResult
 import com.raven.network.NetworkStatus
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals

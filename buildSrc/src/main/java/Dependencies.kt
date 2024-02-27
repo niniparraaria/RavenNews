@@ -12,11 +12,9 @@ import Dependencies.coroutinesAndroid
 import Dependencies.coroutinesTest
 import Dependencies.espressoCore
 import Dependencies.extJunit
-import Dependencies.fundation
 import Dependencies.gson
 import Dependencies.hilt
 import Dependencies.hiltCompiler
-import Dependencies.indicators
 import Dependencies.junit
 import Dependencies.kotlinCore
 import Dependencies.ktxFragment
@@ -40,11 +38,11 @@ import Dependencies.testRunner
 import Dependencies.truth
 import Dependencies.turbine
 import ext.androidTestImplementation
+import ext.debugImplementation
 import ext.implementation
 import ext.kapt
 import ext.testImplementation
 import org.gradle.api.artifacts.dsl.DependencyHandler
-import ext.debugImplementation
 
 object Dependencies {
 
@@ -59,10 +57,6 @@ object Dependencies {
     const val ktxFragment = "androidx.fragment:fragment-ktx:${Versions.ktxFragment}"
     const val lifecycleVM = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
 
-
-    /** UI **/
-    const val fundation = "androidx.compose.foundation:foundation:${Versions.fundation}"
-    const val indicators = "com.google.accompanist:accompanist-pager-indicators:${Versions.indicator}"
 
     /** Testing **/
     const val junit = "junit:junit:${Versions.junit}"
@@ -127,10 +121,6 @@ fun DependencyHandler.general() {
     implementation(kotlinCore)
     implementation(ktxFragment)
     implementation(lifecycleVM)
-}
-fun DependencyHandler.ui() {
-    implementation(fundation)
-    implementation(indicators)
 }
 
 fun DependencyHandler.testing() {

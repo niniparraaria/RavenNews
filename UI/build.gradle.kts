@@ -1,5 +1,3 @@
-import ext.implementation
-
 plugins {
     id(ModulePlugin.MODULE_NAME)
 }
@@ -20,5 +18,4 @@ dependencies {
     general()
     compose()
     coil()
-    ui()
 }

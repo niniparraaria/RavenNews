@@ -9,18 +9,14 @@ import com.ninestudios.local.news.entities.NewsMediaMetadata
 import com.ninestudios.local.news.entities.NewsMediaMetadataList
 import com.raven.detail.data.DetailRepository
 import com.raven.home.CoroutineTestRule
-import com.raven.home.data.HomeRepository
 import com.raven.home.data.source.local.toNewsDataResult
 import com.raven.home.domain.models.NewsData
-import com.raven.home.domain.models.NewsState
-import com.raven.home.presentation.viewmodel.HomeViewModel
 import com.raven.network.NetworkResult
 import com.raven.network.NetworkStatus
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
-import org.junit.Assert.*
-
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

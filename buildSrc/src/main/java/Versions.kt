@@ -10,10 +10,6 @@ object Versions {
     const val kotlinCore = "1.12.0"
     const val ktxFragment = "1.6.2"
 
-    /** UI **/
-    const val fundation = "1.4.3"
-    const val indicator = "0.30.1"
-
     /** Testing **/
     const val junit = "4.13.2"
     const val espresso = "3.5.1"
