@@ -38,4 +38,4 @@ The architecture used is MVVM with Clean Architecture
 - Jetpack Compose https://developer.android.com/jetpack/compose/documentation
 - Mockito https://github.com/mockito/mockito
 - Turbine https://github.com/cashapp/turbine
-- Room 
+- Room https://developer.android.com/training/data-storage/room
