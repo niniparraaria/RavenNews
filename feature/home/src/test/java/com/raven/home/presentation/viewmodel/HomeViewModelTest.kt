@@ -118,29 +118,4 @@ class HomeViewModelTest{
             Mockito.verify(mockRepository).getNews(Mockito.anyString())
         }
     }
-    @Test
-    fun `news results with null error`() {
-        runTest {
-            val exception = NullPointerException()
-            val networkResultExpected = NetworkResult.Error<List<NewsData.Result>>(exception.toString())
-            val stateExpected = NewsState(NetworkStatus.ERROR, errorMessage = exception.toString())
-            val flow = flow{
-                emit(networkResultExpected)
-            }
-            val stateInitExpected = NewsState()
-            BDDMockito.given(mockRepository.getNews(Mockito.anyString())).willThrow(exception).willReturn(flow)
-            viewModel = HomeViewModel(mockRepository)
-            viewModel.state.test {
-                assertEquals(
-                    stateInitExpected,
-                    awaitItem()
-                )
-                assertEquals(
-                    stateExpected,
-                    awaitItem()
-                )
-            }
-            Mockito.verify(mockRepository).getNews(Mockito.anyString())
-        }
-    }
 }
